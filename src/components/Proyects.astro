@@ -1,0 +1,30 @@
+---
+const Projects = [
+  {
+    title: "Calculadora en JavaScript",
+    description: "Creación de una calculadora en JavaScript.",
+    link: "#",
+    github: "#",
+    image: "https://www.lawebdelprogramador.com/usr/195000/195862/5e313d87eea39-img.png",
+    tags: ["html", "css", "javascript"],
+  },
+];
+---
+
+{
+  Projects.map((project) => (
+    <article>
+      <h3 class="font-semibold text-2xl text-blue-400 text-pretty">{project.title}</h3>
+      <p>{project.description}</p>
+      <ul class="flex  gap-x-20 py-5">
+        {project.tags.map((tag) => (
+          <li>{tag}</li>
+        ))}
+      </ul>
+      <img class="rounded shadow-2xl shadow-white/15"
+        src={project.image}
+        alt={`Captura de pantalla del proyecto ${project.title}`}
+      />
+    </article>
+  ))
+}

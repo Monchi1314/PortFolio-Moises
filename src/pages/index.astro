@@ -1,0 +1,96 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Socialpill from "../components/Icons/Socialpill.astro";
+import LinkedinInIcon from "../components/Icons/linkedin.astro";
+import Cv from "../components/Icons/cv.astro";
+import GitHub from "../components/Icons/Git.astro";
+import DocumentoIcon from "../components/Icons/documento.astro";
+import Documento from "../components/Icons/documento.astro";
+import Experiencia from "../components/Experiencia.astro";
+import SeccionContaiers from "../components/SeccionContainer.astro";
+import Proyects from "../components/Proyects.astro";
+import Footer from "../components/Footer.astro"
+---
+
+<Layout title="PortFolio de Moisés De León Desarrollador y Programador web">
+  <main>
+    <SeccionContaiers id="Sobre mí" class="py-20 - pb-10">
+      <img
+        class="rounded-full w-auto h-[100px]"
+        ;
+        src="https://media.licdn.com/dms/image/v2/D4E03AQHfshx2jYDwSg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701855471165?e=1738195200&v=beta&t=pOdqiQpczqlvyR0RSBzp91Ohv8aPFDp0PI-IWZ1bwVQ"
+        alt="portafolio_moises"
+      />
+      <h1
+        class="text-white text-5xl font-bold flex justify-normal flex-row mb-4"
+      >
+        Hola soy Moisés de León...
+      </h1>
+      <h2 class="text-gray-300 leading-relaxed">
+        Soy un <strong class="font-bold text-white"
+          >desarrollador de software</strong
+        > con experiencia destacada en la implementación de <span
+          class="text-blue-400 font-semibold"
+          >soluciones de automatización empresarial</span
+        >. Competente en el uso de <span class="text-yellow-400"
+          >Power Platform</span
+        >, incluyendo
+        <strong class="text-blue-300">PowerApps</strong> y <strong
+          class="text-blue-300">Power Automate</strong
+        >, así como en la integración de sistemas mediante <span
+          class="text-green-400">listas de SharePoint</span
+        >. Poseo conocimientos en lenguajes de programación como
+        <strong class="text-purple-400">Java</strong>,
+        <strong class="text-purple-400">JavaScript</strong>,
+        <span class="text-pink-400">HTML/CSS</span> y bases de datos como
+        <span class="text-red-400">MySQL</span> y <span class="text-red-400"
+          >MongoDB</span
+        >, lo que complementa mi capacidad para <strong
+          >diseñar workflows eficientes</strong
+        > y optimizar procesos en línea con las necesidades del negocio.
+      </h2>
+
+      <nav class="flex items-center justify-center gap-x-5 py-10">
+        <Socialpill
+          href="https://www.linkedin.com/in/moisés-de-león-02263025a/"
+        >
+          <LinkedinInIcon class="w-6 h-6" />
+          LinkedIn
+        </Socialpill>
+
+        <Socialpill
+          href="https://drive.google.com/file/d/1_foX87oevkVXPF36VH_Rd5Hto1NVxk0V/view?usp=drive_link"
+        >
+          <Cv class="w-6 h-6" />
+          Curriculum
+        </Socialpill>
+
+        <Socialpill href="https://github.com/Monchi1314">
+          <GitHub class="w-6 h-6" />
+          GitHub
+        </Socialpill>
+        <Socialpill
+          href="mailto:deleon_m13@outlook.com?subject=Hola&body=Este%20es%20un%20mensaje%20automático"
+        >
+          <DocumentoIcon class="w-6 h-6" />
+          deleon_m13@outlook.com
+        </Socialpill>
+      </nav>
+    </SeccionContaiers>
+    <SeccionContaiers id="Experiencia">
+		<h2 class="Bold text-2xl mb-4">Experiencia Laboral</h2>
+      <Experiencia
+        class="text-white text-5xl font-bold flex justify-normal flex-row mb-4 text-pretty"
+      />
+    </SeccionContaiers>
+	<SeccionContaiers id="Proyectos" class= " py-20 pb-20" >
+		<h2 class="Bold text-2xl mb-4">Proyectos</h2>
+      <Proyects
+        class="text-white text-5xl font-bold flex justify-normal flex-row mb-4 text-pretty"
+      />
+    </SeccionContaiers>
+	<SeccionContaiers>
+      <Footer/>
+    </SeccionContaiers>
+  </main>
+</Layout>
